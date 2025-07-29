@@ -19,7 +19,7 @@ File Name: C:\Downloaded Web Sites\www.maman-corp.com\gtag\js
 Content Type: application/javascript
 
 Uri: https://www.maman-corp.com/
-File Name: C:\Downloaded Web Sites\www.maman-corp.com\index.htm
+File Name: C:\Downloaded Web Sites\www.maman-corp.com\index.html
 Content Type: text/html
 
 Uri: https://www.maman-corp.com/about
@@ -503,7 +503,7 @@ File Name: C:\Downloaded Web Sites\www.maman-corp.com\process.html
 Content Type: text/html
 
 Uri: https://www.maman-corp.com/project/
-File Name: C:\Downloaded Web Sites\www.maman-corp.com\project\index.htm
+File Name: C:\Downloaded Web Sites\www.maman-corp.com\project\index.html
 Content Type: text/html
 
 Uri: https://www.maman-corp.com/project/customer-experience-center

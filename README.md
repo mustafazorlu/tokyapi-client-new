@@ -43,7 +43,7 @@ Server `http://localhost:8000` adresinde çalışacak.
 # Global live-server kurulum
 npm install -g live-server
 
-# Proje klasöründe çalıştır
+# Proje klasöründe çalıştır2
 live-server --port=3000
 ```
 

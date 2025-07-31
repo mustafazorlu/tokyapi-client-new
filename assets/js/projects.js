@@ -218,6 +218,11 @@ class ProjectManager {
                             <div class="projects__nav__infos__title">
                                 ${project.title || 'Başlıksız Proje'}
                             </div>
+                            ${project.description ? `
+                            <div class="projects__nav__infos__description">
+                                ${project.description}
+                            </div>
+                            ` : ''}
                             <ul class="projects__nav__infos__tags">
                                 <li class="projects__nav__infos__tag">
                                     <div class="projects__nav__infos__tag__name">Oluşturulma</div>
@@ -225,11 +230,11 @@ class ProjectManager {
                                         ${project.created_at ? new Date(project.created_at).toLocaleDateString('tr-TR') : 'Bilinmiyor'}
                                     </div>
                                 </li>
-                                ${project.description ? `
+                                ${project.user_id ? `
                                 <li class="projects__nav__infos__tag">
-                                    <div class="projects__nav__infos__tag__name">Açıklama</div>
+                                    <div class="projects__nav__infos__tag__name">Proje ID</div>
                                     <div class="projects__nav__infos__tag__value">
-                                        ${project.description.substring(0, 50)}${project.description.length > 50 ? '...' : ''}
+                                        ${project.id.substring(0, 8)}...
                                     </div>
                                 </li>
                                 ` : ''}
@@ -237,10 +242,16 @@ class ProjectManager {
                                 <li class="projects__nav__infos__tag">
                                     <div class="projects__nav__infos__tag__name">Medya</div>
                                     <div class="projects__nav__infos__tag__value">
-                                        ${project.project_media.length} dosya
+                                        ${project.project_media.length} ${project.project_media.length === 1 ? 'dosya' : 'dosya'}
                                     </div>
                                 </li>
                                 ` : ''}
+                                <li class="projects__nav__infos__tag">
+                                    <div class="projects__nav__infos__tag__name">Durum</div>
+                                    <div class="projects__nav__infos__tag__value">
+                                        Aktif
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </a>

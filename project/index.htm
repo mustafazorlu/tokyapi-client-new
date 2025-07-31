@@ -38,8 +38,14 @@
         <link rel="stylesheet" href="../assets/css/main.css" />
 
         <!-- React ve ReactDOM CDN -->
-        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react@18/umd/react.development.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+        ></script>
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -224,8 +230,16 @@
                     </button>
                     <ul id="projects__nav__list">
                         <!-- Projeler buraya dinamik olarak yüklenecek -->
-                        <li style="padding: 20px; text-align: center; color: #666;">
-                            <div class="loading-spinner">Projeler yükleniyor...</div>
+                        <li
+                            style="
+                                padding: 20px;
+                                text-align: center;
+                                color: #666;
+                            "
+                        >
+                            <div class="loading-spinner">
+                                Projeler yükleniyor...
+                            </div>
                         </li>
                         <!-- React bileşeni buraya entegre edilecek -->
                         <div id="react-projects-container"></div>
@@ -4461,25 +4475,25 @@
 
                 <ul id="footer__pages">
                     <li class="footer__page" id="footer__page--home">
-                        <a class="footer__page__title" href="../index.html"
-                            >Ana Sayfa</a
-                        >
+                        <a class="footer__page__title" href="../index.html">
+                            Ana Sayfa
+                        </a>
 
                         <ul class="footer__page__sections">
                             <li class="footer__page__section">
                                 <a
                                     class="footer__page__section__title"
                                     href="../index.html#story"
-                                    >Hikaye</a
-                                >
+                                    >Hikaye
+                                </a>
                             </li>
 
                             <li class="footer__page__section">
                                 <a
                                     class="footer__page__section__title"
                                     href="../index.html#client-commitment"
-                                    >Müşteri taahhüdü</a
-                                >
+                                    >Müşteri taahhüdü
+                                </a>
                             </li>
 
                             <li class="footer__page__section">
@@ -4653,6 +4667,7 @@
                     <a id="footer__terms" href="../terms-and-conditions.html"
                         >Şartlar &amp; koşullar</a
                     >
+
                     <div id="footer__credits">
                         <span id="footer__credits__txt">Web sitesi</span>
                         <a
@@ -4660,8 +4675,8 @@
                             href="http://www.immersive-g.com"
                             target="_blank"
                             rel="noopener"
-                            >Immersive Garden</a
-                        >
+                            >Immersive Garden
+                        </a>
                     </div>
                 </div>
             </div>
@@ -4731,10 +4746,10 @@
                 });
             }
         </script>
-        
+
         <!-- Projeler için JavaScript -->
         <script src="../assets/js/projects.js"></script>
-        
+
         <!-- React Projeler Bileşeni -->
         <script type="text/babel">
             // useProjects hook simülasyonu
@@ -4751,41 +4766,46 @@
                             title: "Su Üniversitesi",
                             location: "İstanbul, Türkiye",
                             price: 2500000,
-                            description: "Bu 9.380 metrekarelik Su Üniversitesi tesisi, müşterilerin su kullanımını nasıl minimize edeceklerini öğrenmeleri için kullanacakları operasyon ekipmanlarını içerir.",
-                            sahibinden_url: "water-u.html"
+                            description:
+                                "Bu 9.380 metrekarelik Su Üniversitesi tesisi, müşterilerin su kullanımını nasıl minimize edeceklerini öğrenmeleri için kullanacakları operasyon ekipmanlarını içerir.",
+                            sahibinden_url: "water-u.html",
                         },
                         {
                             id: 2,
                             title: "Schneider Schaumburg",
                             location: "Chicago, ABD",
                             price: 1800000,
-                            description: "Maman Corp, Schneider Chicagoland ofislerini tek bir alanda birleştirme işlemini tamamladı. Bu proje, üst iki katın tamamen sökülmesi ve yenilenmesinden oluşuyordu.",
-                            sahibinden_url: "schneider-schaumburg.html"
+                            description:
+                                "Maman Corp, Schneider Chicagoland ofislerini tek bir alanda birleştirme işlemini tamamladı. Bu proje, üst iki katın tamamen sökülmesi ve yenilenmesinden oluşuyordu.",
+                            sahibinden_url: "schneider-schaumburg.html",
                         },
                         {
                             id: 3,
                             title: "Yönetim ve Toplantı Alanları",
                             location: "Houston, ABD",
                             price: 3200000,
-                            description: "Yönetim binalarının tam inşası. Alan toplantı alanları, toplanma alanı ve çok daha fazlasını içeriyordu.",
-                            sahibinden_url: "schneider-houston.html"
+                            description:
+                                "Yönetim binalarının tam inşası. Alan toplantı alanları, toplanma alanı ve çok daha fazlasını içeriyordu.",
+                            sahibinden_url: "schneider-houston.html",
                         },
                         {
                             id: 4,
                             title: "Ecolab Lobi",
                             location: "Naperville, ABD",
                             price: 950000,
-                            description: "Ecolab şirketinin lobi alanının yeniden tasarımı ve inşası.",
-                            sahibinden_url: "ecolab-lobby.html"
+                            description:
+                                "Ecolab şirketinin lobi alanının yeniden tasarımı ve inşası.",
+                            sahibinden_url: "ecolab-lobby.html",
                         },
                         {
                             id: 5,
                             title: "Yüksek Güvenlikli Alanlar & Veri Merkezleri",
                             location: "Çoklu Lokasyon",
                             price: 4500000,
-                            description: "Çeşitli yüksek güvenlikli alanlar ve veri merkezleri projeleri.",
-                            sahibinden_url: "customer-experience-center.html"
-                        }
+                            description:
+                                "Çeşitli yüksek güvenlikli alanlar ve veri merkezleri projeleri.",
+                            sahibinden_url: "customer-experience-center.html",
+                        },
                     ];
 
                     // Simüle edilmiş API çağrısı
@@ -4802,54 +4822,169 @@
                 const { projects, loading, error } = useProjects();
 
                 if (loading) {
-                    return React.createElement('li', {
-                        style: { padding: '20px', textAlign: 'center', color: '#666' }
-                    }, React.createElement('div', { className: 'loading-spinner' }, 'Projeler yükleniyor...'));
+                    return React.createElement(
+                        "li",
+                        {
+                            style: {
+                                padding: "20px",
+                                textAlign: "center",
+                                color: "#666",
+                            },
+                        },
+                        React.createElement(
+                            "div",
+                            { className: "loading-spinner" },
+                            "Projeler yükleniyor..."
+                        )
+                    );
                 }
 
                 if (error) {
-                    return React.createElement('li', {
-                        style: { padding: '20px', textAlign: 'center', color: '#ff0000' }
-                    }, React.createElement('div', null, 'Hata: ', error));
+                    return React.createElement(
+                        "li",
+                        {
+                            style: {
+                                padding: "20px",
+                                textAlign: "center",
+                                color: "#ff0000",
+                            },
+                        },
+                        React.createElement("div", null, "Hata: ", error)
+                    );
                 }
 
-                return React.createElement('ul', { className: 'projects__nav' },
+                return React.createElement(
+                    "ul",
+                    { className: "projects__nav" },
                     projects.map((project, index) =>
-                        React.createElement('li', { key: project.id, className: 'projects__nav__item' },
-                            React.createElement('a', {
-                                className: 'projects__nav__link',
-                                href: project.sahibinden_url || `#project-${project.id}`,
-                                'data-ajax': 'false'
+                        React.createElement(
+                            "li",
+                            {
+                                key: project.id,
+                                className: "projects__nav__item",
                             },
-                                React.createElement('div', { className: 'projects__nav__index' },
-                                    React.createElement('div', { className: 'projects__nav__index__txt' },
-                                        (index + 1).toString().padStart(2, '0')
+                            React.createElement(
+                                "a",
+                                {
+                                    className: "projects__nav__link",
+                                    href:
+                                        project.sahibinden_url ||
+                                        `#project-${project.id}`,
+                                    "data-ajax": "false",
+                                },
+                                React.createElement(
+                                    "div",
+                                    { className: "projects__nav__index" },
+                                    React.createElement(
+                                        "div",
+                                        {
+                                            className:
+                                                "projects__nav__index__txt",
+                                        },
+                                        (index + 1).toString().padStart(2, "0")
                                     ),
-                                    React.createElement('div', { className: 'projects__nav__index__line' })
+                                    React.createElement("div", {
+                                        className: "projects__nav__index__line",
+                                    })
                                 ),
-                                React.createElement('div', { className: 'projects__nav__infos' },
-                                    React.createElement('div', { className: 'projects__nav__infos__title' },
+                                React.createElement(
+                                    "div",
+                                    { className: "projects__nav__infos" },
+                                    React.createElement(
+                                        "div",
+                                        {
+                                            className:
+                                                "projects__nav__infos__title",
+                                        },
                                         project.title
                                     ),
-                                    React.createElement('ul', { className: 'projects__nav__infos__tags' },
-                                        project.location && React.createElement('li', { className: 'projects__nav__infos__tag' },
-                                            React.createElement('div', { className: 'projects__nav__infos__tag__name' }, 'Konum'),
-                                            React.createElement('div', { className: 'projects__nav__infos__tag__value' }, project.location)
-                                        ),
-                                        project.price && React.createElement('li', { className: 'projects__nav__infos__tag' },
-                                            React.createElement('div', { className: 'projects__nav__infos__tag__name' }, 'Fiyat'),
-                                            React.createElement('div', { className: 'projects__nav__infos__tag__value' },
-                                                new Intl.NumberFormat('tr-TR').format(project.price) + ' TL'
+                                    React.createElement(
+                                        "ul",
+                                        {
+                                            className:
+                                                "projects__nav__infos__tags",
+                                        },
+                                        project.location &&
+                                            React.createElement(
+                                                "li",
+                                                {
+                                                    className:
+                                                        "projects__nav__infos__tag",
+                                                },
+                                                React.createElement(
+                                                    "div",
+                                                    {
+                                                        className:
+                                                            "projects__nav__infos__tag__name",
+                                                    },
+                                                    "Konum"
+                                                ),
+                                                React.createElement(
+                                                    "div",
+                                                    {
+                                                        className:
+                                                            "projects__nav__infos__tag__value",
+                                                    },
+                                                    project.location
+                                                )
+                                            ),
+                                        project.price &&
+                                            React.createElement(
+                                                "li",
+                                                {
+                                                    className:
+                                                        "projects__nav__infos__tag",
+                                                },
+                                                React.createElement(
+                                                    "div",
+                                                    {
+                                                        className:
+                                                            "projects__nav__infos__tag__name",
+                                                    },
+                                                    "Fiyat"
+                                                ),
+                                                React.createElement(
+                                                    "div",
+                                                    {
+                                                        className:
+                                                            "projects__nav__infos__tag__value",
+                                                    },
+                                                    new Intl.NumberFormat(
+                                                        "tr-TR"
+                                                    ).format(project.price) +
+                                                        " TL"
+                                                )
+                                            ),
+                                        project.description &&
+                                            React.createElement(
+                                                "li",
+                                                {
+                                                    className:
+                                                        "projects__nav__infos__tag",
+                                                },
+                                                React.createElement(
+                                                    "div",
+                                                    {
+                                                        className:
+                                                            "projects__nav__infos__tag__name",
+                                                    },
+                                                    "Açıklama"
+                                                ),
+                                                React.createElement(
+                                                    "div",
+                                                    {
+                                                        className:
+                                                            "projects__nav__infos__tag__value",
+                                                    },
+                                                    project.description.length >
+                                                        50
+                                                        ? project.description.substring(
+                                                              0,
+                                                              50
+                                                          ) + "..."
+                                                        : project.description
+                                                )
                                             )
-                                        ),
-                                        project.description && React.createElement('li', { className: 'projects__nav__infos__tag' },
-                                            React.createElement('div', { className: 'projects__nav__infos__tag__name' }, 'Açıklama'),
-                                            React.createElement('div', { className: 'projects__nav__infos__tag__value' },
-                                                project.description.length > 50 
-                                                    ? project.description.substring(0, 50) + '...' 
-                                                    : project.description
-                                            )
-                                        )
                                     )
                                 )
                             )
@@ -4861,25 +4996,32 @@
             // React bileşenini DOM'a render et
             ReactDOM.render(
                 React.createElement(ProjectsComponent),
-                document.getElementById('react-projects-container')
+                document.getElementById("react-projects-container")
             );
         </script>
-        
+
         <!-- scripts.js hatalarını minimize et -->
         <script>
             // scripts.js hatalarını yakalayıp devam et
-            window.addEventListener('error', function(e) {
-                if (e.filename && (e.filename.includes('scripts.js') || e.message.includes('ScreenNavigator'))) {
-                    console.warn('scripts.js/ScreenNavigator hatası yakalandı:', e.message);
+            window.addEventListener("error", function (e) {
+                if (
+                    e.filename &&
+                    (e.filename.includes("scripts.js") ||
+                        e.message.includes("ScreenNavigator"))
+                ) {
+                    console.warn(
+                        "scripts.js/ScreenNavigator hatası yakalandı:",
+                        e.message
+                    );
                     e.preventDefault();
                     return true;
                 }
             });
-            
-            // CORS hatalarını da yakalayalım  
-            window.addEventListener('error', function(e) {
-                if (e.message && e.message.includes('CORS')) {
-                    console.warn('CORS hatası yakalandı ve yok sayıldı');
+
+            // CORS hatalarını da yakalayalım
+            window.addEventListener("error", function (e) {
+                if (e.message && e.message.includes("CORS")) {
+                    console.warn("CORS hatası yakalandı ve yok sayıldı");
                     e.preventDefault();
                     return true;
                 }

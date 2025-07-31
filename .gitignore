@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Package locks (yarn tercih ediyorsanız npm lock'ı ignore edin)
+package-lock.json
+# yarn.lock
+
+# IDE / Editor dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS dosyaları
+.DS_Store
+Thumbs.db
+
+# Log dosyaları
+*.log
+npm-debug.log*
+
+# Geçici dosyalar
+.tmp/
+.temp/
+
+# Environment dosyaları (eğer API key'leri saklamak isterseniz)
+.env
+.env.local
+.env.production
+
+# Build outputs (eğer build sistemi eklerseniz)
+dist/
+build/

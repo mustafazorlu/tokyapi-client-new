@@ -1,0 +1,25 @@
+{
+  "name": "tokyapi-client",
+  "version": "1.0.0",
+  "description": "Tok Yapı Proje - Supabase entegrasyonu ile dinamik proje web sitesi",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --host=localhost --open=/index.html",
+    "start": "live-server --port=3000 --host=localhost --open=/index.html",
+    "server": "live-server",
+    "python-server": "python -m http.server 8000",
+    "python3-server": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "static-website",
+    "supabase",
+    "construction",
+    "projects"
+  ],
+  "author": "Tok Yapı Proje",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {}
+} 

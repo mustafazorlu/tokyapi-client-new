@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="no-js desktop">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no"
+        />
+        <meta name="description" content="Proje detayları" />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="../favicon-16x16.png"
+            sizes="16x16"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="../favicon-32x32.png"
+            sizes="32x32"
+        />
+        <link rel="manifest" href="../manifest.json" />
+        <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <title>Proje - Maman Corp</title>
+
+        <script src="../assets/js/lib/modernizr-custom.min.js"></script>
+        <script src="../jquery-3.1.1.min.js"></script>
+
+        <link rel="stylesheet" href="../assets/css/main.css" />
+
+        <!-- Proje detayları için ek CSS -->
+        <style>
+            .project-detail {
+                padding: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .project-header h1 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                color: #CB071D;
+            }
+            
+            .project-description {
+                font-size: 1.2em;
+                line-height: 1.6;
+                margin-bottom: 40px;
+                color: #666;
+            }
+            
+            .project-gallery h3,
+            .project-videos h3 {
+                font-size: 1.8em;
+                margin: 40px 0 20px 0;
+                color: #333;
+            }
+            
+            .gallery-grid,
+            .videos-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                margin-bottom: 40px;
+            }
+            
+            .gallery-item,
+            .video-item {
+                background: #f9f9f9;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            
+            .image-caption,
+            .video-caption {
+                padding: 15px;
+                font-style: italic;
+                color: #666;
+                margin: 0;
+                background: white;
+            }
+            
+            @media (max-width: 768px) {
+                .gallery-grid,
+                .videos-grid {
+                    grid-template-columns: 1fr;
+                }
+                
+                .project-header h1 {
+                    font-size: 2em;
+                }
+            }
+        </style>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="../gtag/js?id=UA-60417875-24"></script>
+
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-60417875-24");
+        </script>
+    </head>
+    <body class="page-id-projects">
+        <div id="top-bar"></div>
+        <a class=" " href="../index.html" id="logo">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="156.9"
+                height="49.1"
+                viewbox="0 0 156.9 49.1"
+            >
+                <path
+                    d="M78 4.6h4.1l3.4 5.5 3.4-5.5H93v14.1h-3.9v-8.1l-3.6 5.5h-.1l-3.6-5.5v8.1H78V4.6z"
+                ></path>
+                <path
+                    d="M100 4.5h3.8l6 14.2h-4.2l-1-2.5h-5.4l-1 2.5H94l6-14.2zm3.5 8.7l-1.6-4-1.6 4h3.2z"
+                ></path>
+                <path
+                    d="M110.8 4.6h4.1l3.4 5.5 3.4-5.5h4.1v14.1h-3.9v-8.1l-3.6 5.5h-.1l-3.6-5.5v8.1h-3.9V4.6z"
+                ></path>
+                <path
+                    d="M132.8 4.5h3.8l6 14.2h-4.2l-1-2.5H132l-1 2.5h-4.1l5.9-14.2zm3.4 8.7l-1.6-4-1.6 4h3.2z"
+                ></path>
+                <path
+                    d="M143.5 4.6h3.7l5.8 7.5V4.6h3.9v14.1h-3.4l-6-7.7v7.7h-3.9V4.6z"
+                ></path>
+                <path
+                    d="M85.3 38.1c-1 0-2-.2-2.8-.5-.9-.4-1.7-.9-2.3-1.5-.7-.7-1.2-1.4-1.6-2.3-.4-.9-.6-1.9-.6-2.9s.2-2 .6-2.9c.4-.9.9-1.7 1.6-2.3.7-.7 1.4-1.2 2.4-1.6.9-.4 1.9-.6 3-.6.7 0 1.4.1 2 .2.6.1 1.1.3 1.6.6s.9.6 1.3.9c.4.4.8.8 1.1 1.2l-2.9 2.3c-.4-.5-.8-.9-1.3-1.2-.5-.3-1.1-.4-1.8-.4-.5 0-1 .1-1.4.3-.4.2-.8.5-1.1.8-.3.3-.5.7-.7 1.2-.2.5-.3.9-.3 1.5 0 .5.1 1 .3 1.5.2.5.4.9.7 1.2.3.3.6.6 1.1.8s.9.3 1.4.3c.4 0 .7 0 1-.1.3-.1.6-.2.8-.4.2-.2.5-.3.7-.5l.7-.7 2.9 2.1c-.3.5-.7.9-1.1 1.3-.4.4-.8.7-1.4 1s-1.1.5-1.7.7c-.7-.1-1.4 0-2.2 0z"
+                ></path>
+                <path
+                    d="M100 38.1c-1.1 0-2.1-.2-3-.6-.9-.4-1.7-.9-2.4-1.6-.7-.7-1.2-1.4-1.6-2.3-.4-.9-.6-1.8-.6-2.8 0-1 .2-2 .6-2.9.4-.9.9-1.7 1.6-2.3.7-.7 1.5-1.2 2.4-1.6.9-.4 1.9-.6 3-.6s2.1.2 3 .6c.9.4 1.7.9 2.4 1.6.7.7 1.2 1.4 1.6 2.3s.6 1.8.6 2.8c0 1-.2 2-.6 2.9-.4.9-.9 1.7-1.6 2.3-.7.7-1.5 1.2-2.4 1.6-.9.4-1.9.6-3 .6zm0-3.5c.5 0 1-.1 1.5-.3.4-.2.8-.5 1.1-.8.3-.3.6-.7.7-1.2.2-.5.3-.9.3-1.5 0-.5-.1-1-.3-1.5-.2-.5-.4-.9-.7-1.2-.3-.4-.7-.6-1.2-.8-.4-.2-.9-.3-1.5-.3-.5 0-1 .1-1.5.3-.4.2-.8.5-1.1.8-.3.3-.6.7-.7 1.2-.2.5-.3.9-.3 1.5 0 .5.1 1 .3 1.5.2.5.4.9.7 1.2s.7.6 1.1.8c.6.1 1.1.3 1.6.3z"
+                ></path>
+                <path
+                    d="M109.2 23.7h6.7c1.1 0 2 .1 2.8.4.8.3 1.4.6 1.8 1.1.8.8 1.3 1.9 1.3 3.3 0 1.1-.3 2-.8 2.7-.5.7-1.2 1.3-2.1 1.6l3.4 4.9h-4.5l-2.8-4.3h-1.7v4.3h-3.9v-14zm6.5 6.8c.7 0 1.2-.2 1.6-.5.4-.3.5-.7.5-1.2 0-.6-.2-1-.6-1.3-.4-.3-.9-.4-1.6-.4H113v3.4h2.7z"
+                ></path>
+                <path
+                    d="M123.4 23.7h6.1c.9 0 1.7.1 2.4.3.7.2 1.3.5 1.9 1 .5.4.9.9 1.2 1.6.3.6.4 1.3.4 2.1s-.1 1.6-.5 2.2c-.3.6-.7 1.2-1.3 1.6-.5.4-1.2.8-1.9 1s-1.6.3-2.4.3h-1.9v4h-3.9V23.7zm5.7 7c.7 0 1.2-.2 1.6-.5.4-.3.6-.8.6-1.3 0-.6-.2-1.1-.6-1.4-.4-.3-1-.5-1.7-.5h-1.8v3.8h1.9z"
+                ></path>
+                <g fill="#CB071D">
+                    <path
+                        d="M57.2 0H0v49.1h8.2V8.2h8.2v40.9h8.1V8.2h32.7v24.5h8.2V0z"
+                    ></path>
+                    <path
+                        d="M40.9 24.5h8.2v-8.1H32.7v32.7h32.7v-8.2H40.9z"
+                    ></path>
+                </g>
+            </svg>
+        </a>
+        <nav class="" id="nav">
+            <input
+                id="nav-is-open"
+                type="checkbox"
+                value=""
+                aria-hidden="true"
+            />
+
+            <label id="nav-toggle" class="" for="nav-is-open">
+                <span id="nav-toggle__list">
+                    <span class="nav-toggle__list__line"></span>
+                    <span class="nav-toggle__list__line"></span>
+                    <span class="nav-toggle__list__line"></span>
+                </span>
+                <span id="nav-toggle__cross">
+                    <span class="nav-toggle__cross__line"></span>
+                    <span class="nav-toggle__cross__line"></span>
+                </span>
+            </label>
+
+            <div id="nav__content">
+                <div id="nav__content__inner">
+                    <div id="nav__content__bg">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1440"
+                            height="900"
+                            viewbox="0 0 1440 900"
+                        >
+                            <path
+                                fill="none"
+                                stroke="#E02D2D"
+                                stroke-width="64"
+                                stroke-miterlimit="10"
+                                d="M-41 715l398-398L-15-55"
+                            ></path>
+                            <path
+                                fill="none"
+                                stroke="#C40E0E"
+                                stroke-width="64"
+                                stroke-miterlimit="10"
+                                d="M541.5 122.8L701.7-37.5"
+                            ></path>
+                            <path
+                                fill="none"
+                                stroke="#D14B4B"
+                                stroke-width="64"
+                                stroke-miterlimit="10"
+                                d="M1007 353L813.8 159.9 513 461.9l506.9 515.9"
+                            ></path>
+                        </svg>
+                    </div>
+                    <ul class="nav__list" id="nav__main-list">
+                        <li class="nav__item" data-id="home">
+                            <a class="nav__link" href="../index.html">
+                                <span class="nav__link__label">Ana Sayfa</span>
+                            </a>
+                        </li>
+                        <li class="nav__item" data-id="solutions">
+                            <a class="nav__link" href="../solutions.html">
+                                <span class="nav__link__label">Çözümler</span>
+                            </a>
+                        </li>
+                        <li class="nav__item" data-id="process">
+                            <a class="nav__link" href="../process.html">
+                                <span class="nav__link__label">Süreç</span>
+                            </a>
+                        </li>
+                        <li class="nav__item" data-id="projects">
+                            <a class="nav__link" href="index.htm">
+                                <span class="nav__link__label">Projeler</span>
+                            </a>
+                        </li>
+                        <li class="nav__item" data-id="about">
+                            <a class="nav__link" href="../about.html">
+                                <span class="nav__link__label">Hakkımızda</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav__list" id="nav__side-list">
+                        <li class="nav__item" data-id="contact">
+                            <a class="nav__link" href="../contact.html">
+                                <span class="nav__link__label">İletişim</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="page-container">
+            <section
+                class="page"
+                id="projects-page"
+                data-first-project-id=""
+                data-title=""
+            >
+                <div id="projects-line"></div>
+
+                <nav class="" id="projects__nav">
+                    <div id="projects__nav__color-overlay"></div>
+                    <div id="projects__nav__overlay"></div>
+                    <button id="projects__nav__shrink">
+                        <span id="projects__nav__shrink__txt"
+                            >Projeye geri dön</span
+                        >
+                    </button>
+                    <ul id="projects__nav__list">
+                        <!-- Projeler buraya dinamik olarak yüklenecek -->
+                        <li class="projects__nav__item">
+                            <div style="padding: 20px; text-align: center;">
+                                Projeler yükleniyor...
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Proje içeriği buraya dinamik olarak yüklenecek -->
+                <div id="project-content">
+                    <div style="padding: 50px; text-align: center;">
+                        <h2>Proje detayları yükleniyor...</h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Projeler için JavaScript -->
+        <script src="../assets/js/projects.js"></script>
+        <script src="../assets/js/scripts.js"></script>
+    </body>
+</html> 
